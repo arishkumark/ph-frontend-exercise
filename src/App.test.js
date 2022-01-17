@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders app container', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Wayfair/i);
-  expect(linkElement).toBeInTheDocument();
+  const mainContainer = screen.getByTestId('container');
+  expect(mainContainer).toBeInTheDocument();
 });
